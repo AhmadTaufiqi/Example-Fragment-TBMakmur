@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">tbmakmur</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="basket">Basket</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list">list view</string>
+    <string name="card">card view</string>
+    <string name="grid">grid view</string>
+    <string name="itemname">item name</string>
+    <string name="detail">item detail</string>
+</resources>
