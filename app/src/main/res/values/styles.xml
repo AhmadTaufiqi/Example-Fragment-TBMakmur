@@ -8,4 +8,47 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="Content" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="Content.Smaller">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="Content.Smaller.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Content.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Content.TextGrey">
+        <item name="android:textColor">@color/colorSubtitle</item>
+    </style>
+
+    <style name="Description">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Description.Field">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">@color/colorSubtitle</item>
+    </style>
+
+    <style name="Description.Value">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <color name="colorSubtitle">#696969</color>
 </resources>

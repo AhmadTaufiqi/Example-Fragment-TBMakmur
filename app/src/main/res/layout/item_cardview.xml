@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    app:cardBackgroundColor="@color/colorAccent"
+    app:cardCornerRadius="20dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/tv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/itemname"/>
+    <TextView
+        android:id="@+id/tv_item_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/tv_item_name"
+        android:layout_toEndOf="@+id/img_item_photo"
+        android:ellipsize="end"
+        android:text="@string/detail"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_item_photo"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_buy"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginEnd="5dp"
+            android:textSize="12sp"/>
+        <Button
+            android:id="@+id/btn_fav"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/favorit"
+            android:layout_marginEnd="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="12sp"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

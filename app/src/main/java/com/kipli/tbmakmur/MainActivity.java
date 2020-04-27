@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.fragment.app.Fragment;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -44,4 +45,27 @@ getSupportFragmentManager().beginTransaction().replace(R.id.container_fragment, 
             return true;
         }
     };
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.view_mode, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        setMode(item.getItemId());
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void setMode(int selectedMode) {
+        switch (selectedMode){
+            case R.id.list_mode:
+            break;
+            case R.id.list_cardview:
+            break;
+            case R.id.list_grid:
+            break;
+        }
+    }
 }

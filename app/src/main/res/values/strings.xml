@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">tbmakmur</string>
+    <string name="app_name">TB Makmur</string>
     <string name="home">Home</string>
     <string name="profile">Profile</string>
     <string name="basket">Basket</string>
@@ -11,4 +11,18 @@
     <string name="grid">grid view</string>
     <string name="itemname">item name</string>
     <string name="detail">item detail</string>
+    <string name="btn_buy">Beli</string>
+    <string name="favorit">Favorit</string>
+    <string name="kipli">foto profil</string>
+    <string name="nama_lengkap">AHMAD TAUFIQI MUHSININ</string>
+    <string name="data_diri">profile</string>
+    <string name="email">ahmadtaufiky@gmail.com</string>
+    <string name="no_hp">0897717777166</string>
+    <string name="alamat">alamat utama</string>
+    <string name="MI">JATIROTO RT 06 RW 02</string>
+    <string name="CAM">Kecamatan Kayen, Kabupaten Pati , Jawa Tengah</string>
+    <string name="POS">kode pos 59171</string>
+    <string name="pembelian">pembelian</string>
+    <string name="hobby_saya">proyek jembatan jabung</string>
+    <string name="berlangganan">Berlangganan</string>
 </resources>

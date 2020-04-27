@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class ItemData {
-    private static String [] itemsNames ={
+    public static String [] itemsNames = new String[]{
           "semen",
           "bata merah",
           "batako",
@@ -22,7 +22,7 @@ public class ItemData {
           "pipa 2 inch",
           "pipa 4 inch"
     };
-    private static String[] itemsStock = {
+    public static String[] itemsStock = new String[]{
             "40 sack",
             "3 rit",
             "4 rit",
@@ -37,7 +37,7 @@ public class ItemData {
             "15 pcs 4 meter",
             "15 pcs 4 meter"
     };
-    private static int[] itemsImages = {
+    public static int[] itemsImages = new int[]{
             R.drawable.semen,
             R.drawable.batamerah,
             R.drawable.batako,
@@ -52,15 +52,5 @@ public class ItemData {
             R.drawable.pipa,
             R.drawable.pipa
     };
-    public static Collection<? extends ItemModel> getListData() {
-        ArrayList<ItemModel> list = new ArrayList<>();
-        for (int position = 0; position < itemsNames.length; position++) {
-            ItemModel hero = new ItemModel();
-            hero.setName(itemsNames[position]);
-            hero.setStock(itemsStock[position]);
-            hero.setPhoto(itemsImages[position]);
-            list.add(hero);
-        }
-        return list;
-    }
+
 }
