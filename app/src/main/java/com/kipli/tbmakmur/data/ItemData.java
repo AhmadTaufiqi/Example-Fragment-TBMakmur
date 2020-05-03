@@ -1,5 +1,8 @@
 package com.kipli.tbmakmur.data;
 
+import android.content.ClipData;
+import android.widget.ArrayAdapter;
+
 import com.kipli.tbmakmur.R;
 import com.kipli.tbmakmur.model.ItemModel;
 
@@ -7,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class ItemData {
-    public static String [] itemsNames = new String[]{
+    public static String [] itemsNames = {
           "semen",
           "bata merah",
           "batako",
@@ -22,7 +25,7 @@ public class ItemData {
           "pipa 2 inch",
           "pipa 4 inch"
     };
-    public static String[] itemsStock = new String[]{
+    public static String[] itemsStock = {
             "40 sack",
             "3 rit",
             "4 rit",
@@ -37,7 +40,7 @@ public class ItemData {
             "15 pcs 4 meter",
             "15 pcs 4 meter"
     };
-    public static int[] itemsImages = new int[]{
+    public static int[] itemsImages = {
             R.drawable.semen,
             R.drawable.batamerah,
             R.drawable.batako,
@@ -52,5 +55,15 @@ public class ItemData {
             R.drawable.pipa,
             R.drawable.pipa
     };
-
+public static ArrayList<ItemModel> getDataList(){
+    ArrayList<ItemModel> list = new ArrayList<>();
+    for (int position = 0; position <itemsNames.length; position++){
+        ItemModel itemModel = new ItemModel();
+        itemModel.setName(itemsNames[position]);
+        itemModel.setStock(itemsStock[position]);
+        itemModel.setPhoto(itemsImages[position]);
+        list.add(itemModel);
+    }
+    return list;
+}
 }

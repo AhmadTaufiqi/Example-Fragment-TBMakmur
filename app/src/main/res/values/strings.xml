@@ -11,7 +11,7 @@
     <string name="grid">grid view</string>
     <string name="itemname">item name</string>
     <string name="detail">item detail</string>
-    <string name="btn_buy">Beli</string>
+    <string name="btn_buy">Bayar</string>
     <string name="favorit">Favorit</string>
     <string name="kipli">foto profil</string>
     <string name="nama_lengkap">AHMAD TAUFIQI MUHSININ</string>
@@ -25,4 +25,5 @@
     <string name="pembelian">pembelian</string>
     <string name="hobby_saya">proyek jembatan jabung</string>
     <string name="berlangganan">Berlangganan</string>
+    <string name="grid_list">change grid view</string>
 </resources>
